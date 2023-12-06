@@ -1,0 +1,39 @@
+{
+  "name": "@pawritharya/editorjs-span-marker",
+  "version": "1.0.0",
+  "keywords": [
+    "codex editor",
+    "marker",
+    "editor.js",
+    "editorjs"
+  ],
+  "description": "Span Marker Tool for Editor.js",
+  "license": "MIT",
+  "repository": "https://github.com/Kaung-HtetKyaw/editorjs-span-marker",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/marker.umd.js",
+  "module": "./dist/marker.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/marker.mjs",
+      "require": "./dist/marker.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "author": {
+    "name": "Kaung Htet Kyaw",
+    "email": "kaunghtetkyaw02749@gmail.com"
+  },
+  "devDependencies": {
+    "vite": "^4.5.0",
+    "vite-plugin-css-injected-by-js": "^3.3.0"
+  },
+  "dependencies": {
+    "@codexteam/icons": "^0.0.5"
+  }
+}
