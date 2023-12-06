@@ -16,7 +16,7 @@ export default class Marker {
    * @type {string}
    */
   static get CSS() {
-    return 'cdx-marker';
+    return 'cdx-span-marker';
   }
 
   /**
