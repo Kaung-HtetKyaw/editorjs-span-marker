@@ -2,14 +2,14 @@
  * Build styles
  */
 import './index.css';
-import { IconMarker } from '@codexteam/icons'
+import { IconMarker } from '@codexteam/icons';
 
 /**
  * Marker Tool for the Editor.js
  *
  * Allows to wrap inline fragment and style it somehow.
  */
- export default class Marker {
+export default class Marker {
   /**
    * Class name for term-tag
    *
@@ -17,12 +17,12 @@ import { IconMarker } from '@codexteam/icons'
    */
   static get CSS() {
     return 'cdx-marker';
-  };
+  }
 
   /**
    * @param {{api: object}}  - Editor.js API
    */
-  constructor({api}) {
+  constructor({ api }) {
     this.api = api;
 
     /**
@@ -37,14 +37,14 @@ import { IconMarker } from '@codexteam/icons'
      *
      * @type {string}
      */
-    this.tag = 'MARK';
+    this.tag = 'SPAN';
 
     /**
      * CSS classes
      */
     this.iconClasses = {
       base: this.api.styles.inlineToolButton,
-      active: this.api.styles.inlineToolButtonActive
+      active: this.api.styles.inlineToolButtonActive,
     };
   }
 
@@ -177,10 +177,9 @@ import { IconMarker } from '@codexteam/icons'
    */
   static get sanitize() {
     return {
-      mark: {
-        class: Marker.CSS
-      }
+      span: {
+        class: Marker.CSS,
+      },
     };
   }
 }
-

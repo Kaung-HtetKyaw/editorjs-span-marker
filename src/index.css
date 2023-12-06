@@ -1,4 +1,7 @@
 .cdx-marker {
-  background: rgba(245,235,111,0.29);
+  background: grey;
   padding: 3px 0;
+  opacity: 0.7;
+  padding: 5px;
+  border-radius: 5px
 }
